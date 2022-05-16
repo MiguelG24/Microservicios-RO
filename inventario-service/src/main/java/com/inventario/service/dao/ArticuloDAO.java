@@ -16,7 +16,4 @@ public interface ArticuloDAO extends JpaRepository<Articulo, Integer>{
 	Articulo findByDescripcion(String descripcion);
 	
 	List<Articulo> findByDescripcionLike(String descripcion);
-	
-	//@Query("select a from Articulo a where a.descripcion like :descripcion")
-	
 }
