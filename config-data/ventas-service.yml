@@ -1,0 +1,20 @@
+server:
+  port: 8005
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/refaccionariaosorio
+    username: root
+    password:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  web:
+    resources:
+      add-mappings: false
